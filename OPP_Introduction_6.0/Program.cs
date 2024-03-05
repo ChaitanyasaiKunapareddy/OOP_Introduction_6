@@ -9,8 +9,8 @@ namespace OOP_Introduction
             // initial access attempt
             Person Student = new Person
             {
-                firstName = "John",
-                lastName = "Doe"
+                firstName = "chaitanya",
+                lastName = "sai"
             };
 
 
@@ -19,7 +19,7 @@ namespace OOP_Introduction
 
             // using the constructor
             Person Teacher = new Person();
-            Person Manager = new Person("Jane");
+            Person Manager = new Person("chaitanya");
 
             // passing by value
             int testVar1 = 3;
@@ -27,7 +27,7 @@ namespace OOP_Introduction
             Debug.WriteLine(testVar1 + " " + result1);
 
             // passing by reference
-            Person testVar2 = new Person("Doe");
+            Person testVar2 = new Person("sai");
             Person result2 = ModifyObjectArgument(testVar2);
             Debug.WriteLine(testVar2.lastName + " " + result2.lastName);
 
@@ -47,7 +47,7 @@ namespace OOP_Introduction
 
         static Person ModifyObjectArgument(Person x)
         {
-            x.lastName = "Dane";
+            x.lastName = "sai";
             return x;
         }
     }
